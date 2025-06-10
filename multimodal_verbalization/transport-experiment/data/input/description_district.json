@@ -1,0 +1,22 @@
+{
+  "year": "The year of reference for the data entry.",
+  "district": "District number within Turin.",
+  "area": "Geographical area of the census zone, in square meters.",
+  "n_stops": "Number of bus and tram stops located within the census area.",
+  "n_lines": "Number of public transport lines that stop within the census area.",
+  "avg_distan": "Average number of line transfers required to reach other census areas in Turin. Set to -1 if the area has no public transport stops.",
+  "tot": "Total population residing in the census area.",
+  "tot_F": "Total female population in the census area.",
+  "tot_M": "Total male population in the census area.",
+  "tot_foreig": "Total number of legally registered foreign residents in the census area.",
+  "n_fam": "Total number of families residing in the census area.",
+  "minors": "Number of minors (aged 0–18) living in the census area.",
+  "working_age": "Number of working-age adults (aged 19–65) living in the census area.",
+  "seniors": "Number of seniors (aged 66 and above) living in the census area.",
+  "stop_coverage": "Ratio of public transport stops to total population in the census area.",
+  "tot_accidents": "Total number of traffic accidents reported within the census area.",
+  "tot_vehicles_involves": "Total number of vehicles involved in reported accidents.",
+  "vehicle_categories": "List of all categories of vehicles involved in accidents.",
+  "n_public_vehicles": "Total number of public transport vehicles involved in accidents.",
+  "public_accidents": "Number of accidents involving at least one public transport vehicle in the census area."
+}

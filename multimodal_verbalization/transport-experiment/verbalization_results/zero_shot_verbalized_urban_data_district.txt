@@ -1,0 +1,115 @@
+# Urban Data Verbalization Results (zero-shot)
+# Generated on: 2025-06-07 14:49:33
+# Source file: ../data/input/population-and-transport-district.csv
+# Total records: 16
+
+## District 1, Year 2012
+
+Year 2012, District 1: Here is a comprehensive, single-paragraph narrative about the urban area:
+
+In the year 2012, District 1 had a geographical area of approximately 6,380,937 square meters, containing 274 bus and tram stops across 928 public transportation lines, resulting in an average distance of around 449 transfers needed to access neighboring districts via public transit. The district's resident population totaled 74,952 individuals, consisting of 39,610 females and 35,245 males, including 8,218 non-resident foreigners. There were 41,689 households, comprising 10,626 children under the age of 18, 47,783 working-aged adults, and 16,446 senior citizens aged 66 and over. Public transportation covered nearly 7% of the population through 273 stops, while there were 408 recorded traffic incidents involving 776 vehicles from various categories, including private cars, motorcycles, bicycles, emergency services, large vehicles, and others; specifically, 43 public transport vehicles were involved in these incidents, leading to 36 collisions affecting public transport alone.
+
+--------------------------------------------------------------------------------
+
+## District 2, Year 2012
+
+Year 2012, District 2: In the district 2 of Turin during the year 2012, there was a geographical area measuring approximately 14,274,479.74 square meters. This area contained 367 bus and tram stops along 1,044 different public transportation lines, resulting in an average of 439 line transfers needed to access neighboring districts. The population residing here totaled 121,753 individuals, consisting of 71,398 females and 62,998 males, including 13,093 foreigners and 65,153 family units. Demographically, this region had 18,476 children under the age of 18, 79,296 people between 19 and 65 years old, and 36,624 seniors aged 66 or older. Public transportation coverage accounted for roughly 6% of the local population. In terms of safety, there were a total of 314 recorded traffic incidents throughout the year, involving 597 vehicles from various categories such as private cars, bicycles, scooters, motorcycles, ambulances, buses, and large vehicles. Among these, 22 vehicles used for public transportation were involved in collisions, leading to a total of 20 accidents affecting those services.
+
+--------------------------------------------------------------------------------
+
+## District 3, Year 2012
+
+Year 2012, District 3: In the district 3 of Turin, during the year 2012, there were approximately 13,099 people residing across an area measuring around 7,890,975 square meters. The district was served by 196 bus and tram stops along 380 different public transportation lines, resulting in an average distance of nearly 400 transfers needed to access neighboring districts via public transit. This translates to a relatively high level of connectivity, especially considering the presence of numerous family units totaling over 67,760 households. Among these residents, roughly 18,885 children aged between 0-18 years old lived alongside more than 83,000 working-aged individuals and almost 31,374 senior citizens. Additionally, the district counted just under 17,800 non-Turin born residents among its inhabitants. Public transportation played a significant role in this community, accounting for a substantial ratio of 2% when compared against the overall population. Unfortunately, despite adequate infrastructure coverage, some concerns arose from reports indicating 348 incidents occurred throughout the region, which included 15 public service vehicles and resulted in a total of 670 damaged/involved vehicles; specifically, fourteen accidents featured at least one such vehicle.
+
+--------------------------------------------------------------------------------
+
+## District 4, Year 2012
+
+Year 2012, District 4: In the district 4 of Turin, during the year 2012, there were approximately 8,166 people residing across an area spanning over 6,230,760.77 square meters. The local transportation network comprised 128 bus and tram stops along 250 different public transit lines, resulting in an average distance of around 295.71 transfers needed to access neighboring districts. This translates to a high density of public transportation, evident from a ratio of nearly 1.38 stops per person. Notably, females accounted for roughly 54% of the total population, while males made up around 49%. Among these individuals, 16,298 held non-Turinese citizenships, representing almost 20% of the overall population. Furthermore, this demographic breakdown consisted of approximately 12,389 minors, 53,348 working-aged citizens, and 18,251 elderly residents forming part of their community. With regards to safety concerns, there was a total of 285 recorded incidents throughout the region last year, including those affecting private motorized two-wheeled vehicles, cars, large vehicles, bicycles, scooters, and emergency services, though just thirteen of them involved some form of public conveyance; also noteworthy is the involvement of 560 distinct vehicles in such events.
+
+--------------------------------------------------------------------------------
+
+## District 5, Year 2012
+
+Year 2012, District 5: Here is a comprehensive, single-paragraph narrative about the specified urban area:
+
+In 2012, District 5 had a geographical area of approximately 16,254,321 square meters. The district was served by 316 bus and tram stops along 603 different public transportation lines, resulting in an average distance of 503.4 between this area and others in Turin requiring around 3.36 public transit stops per person. A total population of 134,203 individuals resided in the district, comprising 69,274 males and 70,991 females, including 22,702 minors aged 0-18, 89,718 working-age adults aged 19-65, and 31,945 seniors aged 66 and over. Furthermore, there were 6,840 households and 23,274 foreign residents recorded in the district. Public transportation played a significant role, covering nearly every resident, but unfortunately, it also contributed to safety concerns, with 397 traffic accidents occurring here last year, resulting from a combined total of 790 vehicles being involved, with 25 of these belonging to public transportation services and causing 23 incidents. Accidents occurred across various types of vehicles such as private cars, motorcycles, bicycles, emergency responders' vehicles, large commercial vehicles, scooters, and buses.
+
+--------------------------------------------------------------------------------
+
+## District 6, Year 2012
+
+Year 2012, District 6: In 2012, District 6 had a geographical area of approximately 22,420,548 square meters. The district was served by 300 bus and tram stops along 577 different public transportation lines, requiring an average of 42 line transfers to access neighboring districts. A total of 102,253 people resided in this area, comprising 54,487 females and 53,088 males, including 24,787 foreigners who were legally registered residents. There were 49,941 households, consisting of 71,719 children under the age of 18, 67,470 individuals between the ages of 19 and 64, and 23,386 senior citizens aged 66 and older. Public transportation coverage accounted for around 6.34% of the population. In terms of safety, there were 361 recorded traffic accidents, involving a total of 706 vehicles from various categories such as private cars, motorcycles, bicycles, and large vehicles. Of these incidents, 14 involved public transportation vehicles.
+
+--------------------------------------------------------------------------------
+
+## District 7, Year 2012
+
+Year 2012, District 7: Here is a comprehensive, single-paragraph narrative about Urban Area 7:
+
+In 2012, District 7 had a geographical area of approximately 18,710,748.84 square meters. The district was served by 258 bus and tram stops along 611 public transportation lines, resulting in an average distance of 372.01 line transfers needed to access other parts of Turin from this location. As of 2012, there were 88,742 people residing in the district, consisting of 46,796 females and 43,333 males, including 20,426 foreigners who held legal residency status. A total of 14,382 children under the age of 18 lived here alongside 57,445 individuals between the ages of 19 and 65, while 19,202 senior citizens aged 66 and older called the district home. There were over 45,908 family units, which corresponds to a ratio of nearly 4% of the population using public transportation per capita. In terms of safety concerns, the district experienced 294 reported traffic incidents during the same period, involving a total of 560 vehicles; these included private cars, motorcycles, bicycles, emergency services, large vehicles, scooters, and public buses, but only 25 of those involved public transit vehicles and resulted in 22 separate accidents.
+
+--------------------------------------------------------------------------------
+
+## District 8, Year 2012
+
+Year 2012, District 8: In the district 8 of Turin, as of 2012, there is a geographical area covering approximately 20,961,888.64 square meters. This region hosts 393 bus and tram stops across 923 different public transportation lines, resulting in an average transfer distance of around 578.01 between neighboring districts. The resident population totals 137,485 individuals, consisting of 74,321 females and 67,044 males, along with 12,292 foreigners. There are 72,082 households in this district, comprising 19,854 minors aged 0-18 years old, 87,417 working-age adults from 19-65 years, and 34,094 senior citizens over 66 years old. Public transportation coverage reaches nearly 8% of the local population, while 503 road accidents occurred here, affecting 968 vehicles overall; specifically, 20 were operated by public services, causing 19 incidents involving these types of vehicles.
+
+--------------------------------------------------------------------------------
+
+## District 1, Year 2019
+
+Year 2019, District 1: In 2019, District 1 had a geographical area of approximately 6,261,488.96 square meters, containing 270 bus and tram stops along 1,029 public transportation lines. The average distance between this district and other areas in Turin was 431.00 kilometers, requiring multiple transfers to access. A total of 72,709 people resided here, consisting of 38,618 females and 34,005 males; among them were 6,504 foreigners, 40,556 households, and 10,160 children under 18 years old, while 45,032 individuals fell within the working age bracket and 17,431 were senior citizens. This community utilized their proximity to public transit effectively, boasting a ratio of 7% coverage per resident. Unfortunately, there were reports of 578 traffic accidents throughout the year, resulting from various types of incidents including those involving private cars, motorcycles, bicycles, emergency services, large vehicles, and others. Of these occurrences, 55 public transport vehicles were involved, leading to 46 accidents specifically affecting these modes of transportation.
+
+--------------------------------------------------------------------------------
+
+## District 2, Year 2019
+
+Year 2019, District 2: Here is a comprehensive, single-paragraph narrative about the urban area:
+
+In 2019, District 2 had a geographical area of approximately 14,156,390 square meters, home to a total population of 117,877 individuals, comprising 68,126 females and 60,187 males. The district also counted 13,553 foreigners among its residents, who were part of a total of 64,058 households. Children under the age of 18 accounted for 15% of the population, while working-age adults made up around 63%, and those aged 66 years old and over comprised nearly 31%. Public transportation was well-represented in the area, with 336 stops serving 1,046 different lines and requiring an average of just over 422 transfers to access other parts of Turin. On average, every resident could expect to find a public transportation stop roughly once every 22 people, resulting from a ratio of almost five-and-a-half stops per thousand inhabitants. Unfortunately, this extensive network did not come without risk; during the same period, there were 505 recorded traffic incidents across the district, involving 1,009 vehicles overall and including 16 cases where public transportation played a role, although only two such instances specifically involved buses or trams themselves.
+
+--------------------------------------------------------------------------------
+
+## District 3, Year 2019
+
+Year 2019, District 3: Here is a comprehensive narrative summarizing the characteristics of Urban Area 3:
+
+In the year 2019, District 3 had a geographical area of approximately 8,015,324.38 square meters, hosting a total population of 123,754 individuals, consisting of 67,569 females and 59,407 males, including 14,905 minors aged 0-18, 76,987 working-age adults, and 31,995 seniors aged 66 and older. The district was served by 407 public transportation lines stopping at 189 locations, resulting in an average distance of 36.84 kilometers between connections (- calculated from avg_distan = 368.35 / n_lines). A significant portion of the population utilized these services, with a stop coverage ratio of 2.37%. Notably, there were 6,805 families residing in this area, which also included 14,805 legally registered foreign residents. Unfortunately, the district experienced 508 reported traffic accidents in 2019, involving 1,028 vehicles, including private cars, motorcycles, bicycles, ambulances, police vehicles, buses, scooters, trucks, and others. Among these incidents, 16 occurred involving public transportation vehicles.
+
+--------------------------------------------------------------------------------
+
+## District 4, Year 2019
+
+Year 2019, District 4: Here is a comprehensive, single-paragraph narrative about Urban Area District 4:
+
+In 2019, District 4 had a geographical area of approximately 6,211,920.31 square meters, featuring 136 bus and tram stops along 303 public transportation lines. On average, it takes around 282 transfer steps to access neighboring districts via these routes. The district's population totals 84,860 individuals, comprising 42,544 females and 38,155 males, including 11,166 foreigners who have obtained legal residency. There are 41,778 households in the area, housing 15,193 children under the age of 18, 49,814 working-age adults between 19 and 65 years old, and nearly 19,293 seniors aged 66 and over. Public transportation services account for roughly 1.44% of the local population coverage ratio, while there were 347 recorded traffic accidents during this period, resulting from 704 incidents involving various types of vehicles such as private cars, motorcycles, bicycles, police patrols, ambulances, large trucks, and others; among them, 12 collisions included public transit vehicles.
+
+--------------------------------------------------------------------------------
+
+## District 5, Year 2019
+
+Year 2019, District 5: In the district 5 of Turin during the year 2019, there were approximately 17 million square meters of geographical area, hosting a total population of 130,296 inhabitants, consisting of 71,654 females and 67,330 males. The district was home to 6,723 households, including 20,881 minors aged between 0 and 18 years old, while 84,768 individuals fell within the working age range (19-65), and 32,735 were seniors aged 66 or older. Public transportation played a significant role, with 334 bus and tram stops serving 754 different routes across this vast area, requiring an average of 503 line changes to connect it to other districts. Notably, around 24,345 non-resident foreigners lived in this region. Furthermore, road safety concerns existed, with 655 reported incidents occurring over the course of the year, resulting from collisions involving various types of vehicles such as private cars, police units, bicycles, scooters, ambulances, motorcycles, emergency services, trucks, buses, and others. Among these, a notable 26 accidents included involvement of public transit vehicles.
+
+--------------------------------------------------------------------------------
+
+## District 6, Year 2019
+
+Year 2019, District 6: In 2019, District 6 had a geographical area of approximately 22,381,614.39 square meters. The district was served by 276 bus and tram stops along 687 different public transportation lines, resulting in an average of 396.08 line transfers needed to access other areas in Turin. As of this time period, there were 100,191 inhabitants, consisting of 53,874 females and 51,815 males; furthermore, 2,598 people held non-Turinese citizenship. A total of 49,640 households called the district home, housing 17,475 children under the age of 18, 64,369 individuals between the ages of 19 and 65, and 23,845 elderly citizens aged 66 years old and over. Public transit accounted for nearly 5.68% of local population coverage. During 2019, there were 574 recorded road incidents, including those involving private cars, bicycles, police forces, motorcycles, ambulances, large vehicles, scooters, and buses, which collectively engaged 1,151 vehicles. Among these events, 22 occurred with at least one public transport vehicle being involved.
+
+--------------------------------------------------------------------------------
+
+## District 7, Year 2019
+
+Year 2019, District 7: Here is a comprehensive, single-paragraph narrative about Urban Area District 7:
+
+In 2019, District 7 had a geographical area of approximately 18,635,391 square meters, hosting 272 bus and tram stops along 657 public transport lines, which facilitated an average transfer distance of around 354 kilometers between other census areas. The district was home to a total population of 83,607 individuals, comprising 43,868 females and 40,280 males, including 16,770 foreigners, who were part of 44,385 households. Among them, there were 12,352 children under the age of 18, 52,471 working-age adults, and 19,325 senior citizens. Public transportation coverage reached nearly 3.4% of the local population. Unfortunately, this bustling district experienced 435 reported traffic accidents in 2019, resulting from interactions with various types of vehicles, including private cars, motorcycles, bicycles, emergency services, large commercial vehicles, and others; among these incidents, 24 involved public transport vehicles.
+
+--------------------------------------------------------------------------------
+
+## District 8, Year 2019
+
+Year 2019, District 8: In the district 8 of Turin during the year 2019, there were approximately 20.89 million square meters of geographical area covered by this region, hosting 377 bus and tram stops along 920 different public transportation lines. On average, it takes around 564 trips through multiple transit lines to access neighboring districts from here. The local population totals 129,876 individuals, consisting of 70,265 females and 62,548 males, among whom 18,358 are minors aged between 0 and 18 years old, while 34,703 are senior citizens over 65 years old. There are also 6,819 households with non-resident foreigners totaling 18,191 people. This community is served by 69451 family units and receives roughly 7.67 times more public transportation options than inhabitants. Furthermore, there have been reports of 700 incidents throughout the entire year including involvement of 1388 vehicles across various categories such as private cars, motorcycles, bicycles, ambulances, police, scooters, big trucks, buses, and others. Among these events, specifically 38 occurred due to collisions involving some form of public transportation, which included participation of 41 unique public service vehicles.
+
+--------------------------------------------------------------------------------
+
