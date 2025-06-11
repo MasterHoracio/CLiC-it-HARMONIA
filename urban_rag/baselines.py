@@ -1,155 +1,94 @@
+import re
 import os
+import json
 import torch
+import time
+import argparse
 import numpy as np
 import pandas as pd
+from tqdm import tqdm
+from openai import OpenAI
 from typing import List, Dict, Tuple, Optional, Union
-from dataclasses import dataclass
-from sentence_transformers import SentenceTransformer
-from transformers import AutoTokenizer, AutoModelForCausalLM
-import re
 from datetime import datetime
 
-@dataclass
-class AnalysisMetadata:
-    """Metadata for each analysis section"""
-    section_id: str
-    analysis_type: str
-    timestamp: datetime
-    location: str
-    metrics: Dict[str, float]
-    raw_text: str
+import google.generativeai as genai
+genai.configure(api_key="AIzaSyBA60prQ_BSjhxJtkTB53whdhzs97qI0wc")
 
-class UrbanAnalysisRAG:
-    def __init__(
-        self,
-        chunk_size: int = 500,
-        chunk_overlap: int = 50,
-        embedding_model: str = "all-mpnet-base-v2",
-        llm_model: str = "google/gemma-2b-it",
-        device: str = "cuda" if torch.cuda.is_available() else "cpu"
-    ):
-        """
-        Initialize the Urban Analysis RAG system.
-        """
-        self.device = device
-        self.chunk_size = chunk_size
-        self.chunk_overlap = chunk_overlap
-        
-        # Initialize models
-        self.embedding_model = SentenceTransformer(embedding_model, device=self.device)
-        self.tokenizer = AutoTokenizer.from_pretrained(llm_model)
-        self.llm = AutoModelForCausalLM.from_pretrained(
-            llm_model,
-            torch_dtype=torch.float16,
-            device_map="auto"
+client = OpenAI(api_key="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")
+
+def build_prompt(llm: str, query: str):
+    if llm == "gemini":
+        prompt = f"""You are an expert in demographic and transportation aspects of the city of Turin (Torino), Italy.\n
+Based on detailed census data and transport-related statistics, your task is to provide accurate, very concise, and short answers to user questions regarding population, public transportation availability, connectivity, district statistics, and related metrics.
+If the required information is not available, simply reply: 'I cannot answer the question due to lack of necessary data'.\n
+Question: {query}"""
+    elif llm == "gpt":
+        base_content = f"""You are an expert in demographic and transportation aspects of the city of Turin (Torino), Italy.\n"""
+        additional_content = f"""Based on detailed census data and transport-related statistics, your task is to provide accurate, very concise, and short answers to user questions regarding population, public transportation availability, connectivity, district statistics, and related metrics.
+If the required information is not available, simply reply: 'I cannot answer the question due to lack of necessary data'.\n
+Question: {query}"""
+        prompt = [
+            {
+                "role": "system",
+                "content": [{"type": "text", "text": base_content}],
+            },
+            {
+                "role": "system",
+                "content": [{"type": "text", "text": additional_content}],
+            }
+        ]
+    return prompt
+    
+def get_response(llm, prompt, model = None, tokens = 512):
+    if llm == "gemini":
+        response = model.generate_content(prompt,generation_config={
+        "max_output_tokens": tokens})
+        return response.text
+    elif llm == "gpt":
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",  # Ensure the model name is correct
+            messages=prompt,
+            max_tokens=tokens,
         )
-        
-        # Storage for processed data
-        self.analysis_sections: Dict[str, AnalysisMetadata] = {}
-        self.embeddings = None
-        self.text_chunks = []
-        
-    def _chunk_text(self, text: str) -> List[str]:
-        """
-        Split text into chunks while preserving meaningful boundaries.
-        """
-        sections = re.split(r'(?:\n\s*\n|\={3,})', text)
-        return [s.strip() for s in sections if s.strip()]
-
-    def process_text_data(self, text: str) -> None:
-        """
-        Process raw text data and organize it into analyzed sections.
-        """
-        self.text_chunks = self._chunk_text(text)
-        
-        # Create embeddings for all chunks
-        self.embeddings = self.embedding_model.encode(
-            self.text_chunks,
-            convert_to_tensor=True,
-            device=self.device
-        )
-
-    def retrieve_relevant_context(self, query: str, top_k: int = 5) -> List[str]:
-        """
-        Retrieve relevant text chunks based on query.
-        """
-        query_embedding = self.embedding_model.encode(
-            query,
-            convert_to_tensor=True,
-            device=self.device
-        )
-        
-        similarity_scores = torch.cosine_similarity(query_embedding.unsqueeze(0), self.embeddings)
-        top_k_indices = torch.topk(similarity_scores, min(top_k, len(self.text_chunks))).indices
-        
-        return [self.text_chunks[int(i)] for i in top_k_indices]
-
-    def generate_response(self, query: str) -> str:
-        """
-        Generate a response using retrieved context and an LLM.
-        """
-        relevant_chunks = self.retrieve_relevant_context(query, top_k=5)
-        
-        if not relevant_chunks:
-            return "No relevant information found in the dataset."
-        
-        context = "\n\n".join(relevant_chunks)
-        prompt = f"""Based on the following urban analysis data:
-
-{context}
-
-Question: {query}
-
-Please provide a detailed response strictly based on the provided context."""
-        
-        input_ids = self.tokenizer(
-            prompt,
-            return_tensors="pt",
-            truncation=True,
-            max_length=2048
-        ).to(self.device)
-        
-        outputs = self.llm.generate(
-            **input_ids,
-            temperature=0.7,
-            max_new_tokens=512,
-            do_sample=True
-        )
-        
-        return f"Retrieved Context:\n\n{context}\n\nResponse:\n" + self.tokenizer.decode(outputs[0], skip_special_tokens=True).replace(prompt, "").strip()
+        return str(response.choices[0].message.content)
+    return None
 
 # Example usage
-def main():
-    # Initialize the RAG system
-    rag = UrbanAnalysisRAG()
+def main(args):
+    llm                  = args.llm
+    path_queries         = args.path_queries
+    path_output          = "output_results/"
+    out_file_name        = llm + "_output_responses.txt"
+    output_path          = os.path.join(path_output, out_file_name)
     
-    # Load and process text data
-    with open("verbalized-data.txt", "r") as f:
-        text_data = f.read()
+    # Load queries
+    with open(path_queries, 'r') as f:
+        queries = json.load(f)
+
+    if llm == "gpt":
+        model_id = "gpt-4o-mini"
+        model = None
+    elif llm == "gemini":
+        model_id = "models/gemini-2.0-flash"
+        model = genai.GenerativeModel(model_name=model_id)
     
-    rag.process_text_data(text_data)
-    
-    # Example queries
-    queries = [
-        "How the length of lines per capita relates to the number of lines in the area?",
-        "Analyze the temporal changes in Turin district, particularly focusing on how immigrant percentage has changed?",
-        "How the number of stops per capita and number of lines stopping reflect the population size in Turin district?", 
-        #"Whether district's transport coverage appears appropriate for its demographic compositions?",
-        "How does public transport accessibility differ between areas with varying age distributions?",
-        "Which districts have the lowest number of stops per capita, and how does this impact accessibility?",
-        "Are there areas where public transport coverage is disproportionately low compared to demand?",
-        
-        #"How does the coverage of stoppings and number of lines stopping reflect the number of people in a census?",
-        #"Does a higher number of minors and seniors in a census reflect a higher number of stops and lines stopping?",
-        #"Does the length of the lines stopping per population increase when the number of lines is higher?"
-    ]
-    
-    # Generate responses
-    for query in queries:
-        print(f"\nQuery: {query}")
-        print("-" * 80)
-        response = rag.generate_response(query)
-        print(f"Response: {response}\n")
+    with open(output_path, 'w', encoding='utf-8') as outfile:
+        outfile.write(f"# Output responses using: {model_id}\n")
+        outfile.write(f"# Generated on: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
+        outfile.write(f"# Source file: {path_queries}\n")
+        outfile.write(f"# Total records: {len(queries)}\n\n")
+        # Generate responses
+        for key, value in tqdm(queries.items(), desc="Processing queries"):
+            outfile.write(f"\nQuery {key}: {value}\n")
+            outfile.write("-" * 100)
+            prompt = build_prompt(llm, value)
+            response = get_response(llm, prompt, model)
+            outfile.write(f"\nResponse: {response}\n")
+            time.sleep(5)
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--llm", type=str, required=True)
+    parser.add_argument("--path_queries", type=str, required=True)
+    args = parser.parse_args()
+    main(args)

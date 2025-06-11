@@ -1,0 +1,105 @@
+# Output responses using: gpt-4o-mini
+# Generated on: 2025-06-11 13:23:39
+# Source file: queries.json
+# Total records: 25
+
+
+Query 1: From 2012 to 2019 the population in Turin has decreased. Considering all the census, does this decrease affect all the demographics? Which category is more affected and which one is less affected?
+----------------------------------------------------------------------------------------------------
+Response: The population decrease in Turin from 2012 to 2019 primarily affected younger demographics, particularly those aged 18-34. Older age groups, such as those over 60, experienced less decline.
+
+Query 2: Is there any correlation between the number of foreigners and the number of families? Can you spot whether a high number of foreigners in a census means a high number of components in families?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 3: Does a high number of females in a census mean a high number of minors in that census?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 4: Does a high number of foreigners in a census mean a high number of minors in that census?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 5: Which district is the most populated? Consider all the census belonging to the districts.
+----------------------------------------------------------------------------------------------------
+Response: The most populated district in Turin is Circoscrizione 3, which includes neighborhoods like San Paolo and Cenisia.
+
+Query 6: Which district has the highest number of family components?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 7: Does a high number of working-age adults mean a low number of family components?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 8: Which one is the district with the highest number of minors?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 9: Which districts experienced the largest changes (either increase or decrease) in the percentage of foreigners between 2012 and 2019?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 10: Which districts experienced the largest changes (either increase or decrease) in the percentage of minors between 2012 and 2019?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 11: Which district has the highest total number of accidents?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 12: Which district has the lowest number of public accidents?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 13: Does a high total population in a district imply a high number of total accidents?
+----------------------------------------------------------------------------------------------------
+Response: Not necessarily; while a higher population can lead to more activity and potential accidents, the correlation varies depending on factors like infrastructure, traffic management, and urban planning.
+
+Query 14: Does a high number of family components in a district imply a high number of public accidents?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 15: From 2012 to 2019, has the number of public accidents decreased in most districts?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 16: Which districts experienced the largest changes (either increase or decrease) in the number of public accidents between 2012 and 2019?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 17: Which district has the highest number of bus/tram stops in the census?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 18: Which district has the lowest number of lines stopping in the census?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 19: Does a high number of children in the census imply greater stop coverage?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 20: Does a high total population in the census imply a higher number of bus/tram stops?
+----------------------------------------------------------------------------------------------------
+Response: Not necessarily; a high total population may not directly imply a higher number of bus/tram stops, as transport infrastructure also depends on urban planning and density.
+
+Query 21: Does a high number of seniors in the census imply greater connectivity between districts?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 22: From 2012 to 2019, can you spot whether the number of bus/tram stops has increased in the census?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 23: From 2012 to 2019, can you spot whether connectivity between districts has improved?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 24: Which districts experienced the largest changes (either increase or decrease) in the number of lines stopping in the census between 2012 and 2019?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
+
+Query 25: Which districts experienced the largest changes (either increase or decrease) in inter-district connectivity between 2012 and 2019?
+----------------------------------------------------------------------------------------------------
+Response: I cannot answer the question due to lack of necessary data.
