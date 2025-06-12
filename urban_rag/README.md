@@ -22,3 +22,29 @@ python3 baseline.py --llm gpt --path_queries queries.json
 
 # Using Gemini
 python3 baseline.py --llm gemini --path_queries queries.json
+```
+
+## RAG
+
+This repository also includes the `rag.py` script, which implements a Retrieval-Augmented Generation (RAG) approach for evaluating language model responses in inclusive decision-making tasks.
+
+The `rag.py` script requires the following input parameters:
+
+- `--path_queries`: The path to a `.json` file containing the list of queries to be submitted to the selected language model.
+- `--verbalization`: Specifies the verbalization strategy to be used in the experiment. Supported values are:
+  - `zero_shot_general_verbalization`
+  - `few_shot_general_verbalization`
+  - `perspective_verbalization`
+
+To execute the RAG script with the available verbalization strategies, use the following commands:
+
+```bash
+# Using zero-shot general verbalization
+python3 rag.py --verbalization zero_shot_general_verbalization --path_queries queries.json
+
+# Using few-shot general verbalization
+python3 rag.py --verbalization few_shot_general_verbalization --path_queries queries.json
+
+# Using perspective verbalization
+python3 rag.py --verbalization perspective_verbalization --path_queries queries.json
+```
