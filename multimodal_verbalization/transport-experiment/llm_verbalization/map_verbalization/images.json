@@ -1,0 +1,14 @@
+{
+    "tot_F": ["stat_zone_F.png", "tot"],
+    "tot_foreig": ["stat_zone_foreign.png", "tot"],
+    "tot_M": ["stat_zone_M.png", "tot"],
+    "minors": ["stat_zone_minors.png", "tot"],
+    "seniors": ["stat_zone_seniors.png", "tot"],
+    "tot": ["stat_zone_tot.png"],
+    "working_age": ["stat_zone_working_age.png", "tot"],
+    "avg_distan": ["zone_stat_degreeOfDistance.png"],
+    "n_lines": ["zone_stat_n_lines.png"],
+    "n_stops": ["zone_stat_n_stops.png"],
+    "public_accidents": ["zone_stat_public_accidents.png", "tot_accidents"],
+    "tot_accidents": ["zone_stat_accidents.png"]
+}

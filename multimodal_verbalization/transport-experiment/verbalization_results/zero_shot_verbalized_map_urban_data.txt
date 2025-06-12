@@ -1,0 +1,370 @@
+# Urban Data Map Verbalization Results
+# Generated on: 2025-06-12 14:32:26
+# Source file: ../../data/input/population-and-transport-zone.csv
+# Total records: 12
+
+## Analysis of the total female population in the census area. for the years 2012 and 2019.
+
+
+The provided narrative analyzes and compares the total female population in the census area across the statistical zones of Turin, based on the comparison maps for 2012 and 2019.
+
+**Key Patterns and Trends:**
+
+*   The majority of statistical zones exhibit an increase in the female population between 2012 and 2019.
+*   The most common pattern observed is a small increase in the female population, with approximately 70% of zones showing an increase of less than 1%.
+*   A smaller percentage of zones (around 20%) exhibit a larger increase in the female population, with values ranging from 1% to 5%.
+
+**Zones with the Highest Increases:**
+
+*   The top 5 zones with the highest increases in the female population are:
+    *   Zone 2 (Palazzo Reale): 4.94%
+    *   Zone 09bis (Valentino): 3.71%
+    *   Zone 75 (Val Salice): 2.76%
+    *   Zone 54 (Stadio Olimpico Grande Torino-Piazza d'Armi): 1.84%
+    *   Zone 72 (Sassi): 1.82%
+
+**Zones with the Largest Decreases:**
+
+*   The top 5 zones with the largest decreases in the female population are:
+    *   Zone 73 (Valgrande-Cartman): 4.99%
+    *   Zone 78 (Villaggio Snia-Abbadia di Stura): 4.32%
+    *   Zone 80 (Superga): 3.19%
+    *   Zone 36 (Cimitero Generale): 3.07%
+    *   Zone 67 (Basse di Stura): 2.59%
+
+**Summary:**
+
+The analysis reveals that the majority of statistical zones in Turin experienced an increase in the female population between 2012 and 2019. The most common pattern is a small increase, while a smaller percentage of zones exhibit a larger increase. The top 5 zones with the highest increases are located in the central and western parts of the city, while the top 5 zones with the largest decreases are located in the eastern and southern parts of the city.<|eot_id|>
+
+--------------------------------------------------------------------------------
+
+## Analysis of the total number of legally registered foreign residents in the census area. for the years 2012 and 2019.
+
+
+The provided comparison maps illustrate the total number of legally registered foreign residents in the census area across various statistical zones in Turin, Italy. The maps display the percentage of foreign residents in each zone for the years 2012 and 2019.
+
+**Key Patterns and Trends:**
+
+*   **Most Common Patterns:** The most common patterns observed across zones are increases in the percentage of foreign residents, with many zones showing an increase from 2012 to 2019. Notably, zones with higher percentages of foreign residents in 2012 tend to have larger increases, indicating a possible correlation between the initial percentage of foreign residents and the rate of increase.
+*   **Zones with the Highest Increases:** The zones with the highest increases in values from 2012 to 2019 are:
+    *   Zone 80 (Superga): 6.36% increase
+    *   Zone 74 (Val Piana-Val San Martino): 6.03% increase
+    *   Zone 73 (Valgrande-Cartman): 5.64% increase
+    *   Zone 2 (Palazzo Reale): 5.47% increase
+    *   Zone 49 (Parco della Pellerina): 4.6% increase
+*   **Zones with the Largest Decreases:** The zones with the largest decreases in values from 2012 to 2019 are:
+    *   Zone 88 (Strada Ronchi-Tetti Gramaglia): 2.38% decrease
+    *   Zone 26 (Crocetta): 2.4% decrease
+    *   Zone 29 (Campidoglio): 2.41% decrease
+    *   Zone 6 (Piazza Vittorio Veneto): 2.42% decrease
+    *   Zone 57 (Molinette-Millefonti): 2.56% decrease
+
+**Conclusion:**
+
+The provided comparison maps reveal a general trend of increasing percentages of foreign residents across various statistical zones in Turin, Italy, from 2012 to 2019. However, some zones exhibit significant decreases, indicating variations in demographic changes across different areas of the city. These findings suggest that the distribution of foreign residents in Turin is dynamic and influenced by various factors, including economic, social, and cultural changes.<|eot_id|>
+
+--------------------------------------------------------------------------------
+
+## Analysis of the total male population in the census area. for the years 2012 and 2019.
+
+
+Based on the provided data, the narrative below summarizes the key trends and patterns observed in the male population distribution across statistical zones in Turin.
+
+### Most Common Patterns
+
+*   The majority of zones experienced an increase in male population between 2012 and 2019, with 43 zones showing an increase and only 10 zones showing a decrease.
+*   The average increase in male population across all zones was 1.3%, with a range of 0.01% to 11.11%.
+*   The top 10 zones with the highest increases in male population were:
+    *   09bis (Valentino): 11.11%
+    *   73 (Valgrande-Cartman): 4.99%
+    *   80 (Superga): 4.24%
+    *   75 (Val Salice): 3.98%
+    *   36 (Cimitero Generale): 3.02%
+    *   81 (Mongreno): 1.34%
+    *   82 (Reaglie-Forni e Goffi): 1.3%
+    *   39 (Monte Bianco): 1.28%
+    *   92 (Cimitero Parco Torino sud): 1.12%
+    *   13 (Parco Michelotti-Borgo Po): 1.1%
+
+### Zones with the Highest Increases
+
+*   The zones with the highest increases in male population were located in the northern and eastern parts of the city, with 09bis (Valentino) showing the largest increase of 11.11%.
+*   The zones with the highest increases were generally located in areas with higher population densities and urbanization levels.
+
+### Zones with the Largest Decreases
+
+*   The zones with the largest decreases in male population were located in the southern and western parts of the city, with 78 (Villaggio Snia-Abbadia di Stura) showing the largest decrease of 1.61%.
+*   The zones with the largest decreases were generally located in areas with lower population densities and urbanization levels.
+
+### Top-Summary
+
+*   The majority of zones experienced an increase in male population between 2012 and 2019, with the top 10 zones showing increases ranging from 1.34% to 11.11%.
+*   The zones with the highest increases were located in the northern and eastern parts of the city, while the zones with the largest decreases were located in the southern and western parts of the city.<|eot_id|>
+
+--------------------------------------------------------------------------------
+
+## Analysis of the number of minors (aged 0–18) living in the census area. for the years 2012 and 2019.
+
+
+The provided comparison maps illustrate the distribution of minors (aged 0–18) across statistical zones in Turin, Italy, based on 2012 and 2019 census data. The maps display the percentage of minors in each zone, with darker colors indicating higher percentages.
+
+**Key Patterns and Trends:**
+
+*   **Increase in Minors (2012-2019):** Zones with an increase in minors include Palazzo Reale (12.42%), Val Piana-Val San Martino (17.54%), Boringhieri (14.67%), San Salvario (15.02%), Regio Parco (16.76%), and others. These zones have experienced an increase in minors between 2012 and 2019.
+*   **Decrease in Minors (2012-2019):** Zones with a decrease in minors include Valgrande-Cartman (15.67%), Barriera di Stura (15.87%), Santa Margherita (15.49%), San Paolo (12.39%), Piazza Statuto (14.72%), and others. These zones have experienced a decrease in minors between 2012 and 2019.
+
+**Top-Summary:**
+
+*   **Most Common Patterns:** The most common pattern observed across zones is a relatively stable percentage of minors, with many zones experiencing minor fluctuations between 2012 and 2019.
+*   **Zones with the Highest Increases:** Zones with the highest increases in minors include Palazzo Reale (12.42%), Val Piana-Val San Martino (17.54%), Boringhieri (14.67%), San Salvario (15.02%), and Regio Parco (16.76%).
+*   **Zones with the Largest Decreases:** Zones with the largest decreases in minors include Valgrande-Cartman (15.67%), Barriera di Stura (15.87%), Santa Margherita (15.49%), San Paolo (12.39%), and Piazza Statuto (14.72%).
+
+**Conclusion:**
+
+The comparison maps provide valuable insights into the distribution of minors across statistical zones in Turin, Italy. The data reveals that while some zones have experienced an increase in minors, others have seen a decrease. The most common pattern observed is a relatively stable percentage of minors, with minor fluctuations between 2012 and 2019. The zones with the highest increases in minors are primarily located in the city center, while those with the largest decreases are found in the surrounding areas.<|eot_id|>
+
+--------------------------------------------------------------------------------
+
+## Analysis of the number of seniors (aged 66 and above) living in the census area. for the years 2012 and 2019.
+
+
+The narrative below provides an analysis of the senior population distribution in the statistical zones of Turin, comparing the data from 2012 and 2019.
+
+**Overall Trend**
+
+*   The percentage of seniors (aged 66 and above) in the statistical zones of Turin increased from 2012 to 2019, with a notable rise in the number of zones with higher percentages of seniors.
+
+**Most Common Patterns**
+
+*   The majority of zones exhibited an increase in the percentage of seniors, with a few zones showing a decrease.
+*   The most common pattern observed was an increase in the percentage of seniors, with many zones experiencing a moderate to significant rise.
+*   The least common pattern observed was a decrease in the percentage of seniors, with only a few zones showing a decline.
+
+**Zones with the Highest Increases**
+
+*   The zones with the highest increases in the percentage of seniors were:
+    *   Zone 49 (Parco della Pellerina): 9.74%
+    *   Zone 09bis (Valentino): 7.41%
+    *   Zone 75 (Val Salice): 5.72%
+    *   Zone 67 (Basse di Stura): 4.62%
+    *   Zone 15 (Piazza Crimea): 4.42%
+*   These zones experienced a significant increase in the percentage of seniors, with some zones showing an increase of over 9%.
+
+**Zones with the Largest Decreases**
+
+*   The zones with the largest decreases in the percentage of seniors were:
+    *   Zone 41 (Barriera di Milano): -0.39%
+    *   Zone 36 (Cimitero Generale): -0.52%
+    *   Zone 73 (Valgrande-Cartman): -0.55%
+    *   Zone 55 (Istituto di Riposo vecchiaia): -0.66%
+    *   Zone 14 (Motovelodromo): -0.72%
+*   These zones experienced a moderate to significant decrease in the percentage of seniors, with some zones showing a decrease of over 0.5%.
+
+**Key Takeaways**
+
+*   The percentage of seniors in the statistical zones of Turin increased from 2012 to 2019, with many zones experiencing a moderate to significant rise.
+*   The most common pattern observed was an increase in the percentage of seniors, with many zones experiencing a moderate to significant rise.
+*   The zones with the highest increases in the percentage of seniors were located in the northern and eastern parts of the city, while the zones with the largest decreases were located in the southern and western parts of the city.<|eot_id|>
+
+--------------------------------------------------------------------------------
+
+## Analysis of the total population residing in the census area. for the years 2012 and 2019.
+
+
+The provided image presents a comparative analysis of the total population distribution across various statistical zones in Turin, Italy, for the years 2012 and 2019. The data is visualized through two maps, each representing the total population per statistical zone for the respective year.
+
+**Key Observations:**
+
+*   **Population Distribution:** The maps display a diverse range of population sizes across different zones, with some areas exhibiting significant increases or decreases in population between 2012 and 2019.
+*   **Color-Coded Zones:** Each zone is color-coded according to its population size, with darker shades indicating higher population densities and lighter shades representing lower population densities.
+*   **Temporal Changes:** A notable trend is observed in the temporal changes between 2012 and 2019. While some zones experienced population growth, others witnessed a decline. The most significant increases in population were recorded in the zones with lower population densities, whereas the zones with higher population densities generally experienced decreases.
+*   **Highest Increases:** The top three zones with the highest increases in population between 2012 and 2019 are:
+    *   Zone 79 (Bertolla): 316
+    *   Zone 4 (Piazza San Carlo): 204
+    *   Zone 74 (Val Piana-Val San Martino): 189
+*   **Largest Decreases:** The top three zones with the largest decreases in population between 2012 and 2019 are:
+    *   Zone 12 (Borgo Dora): 1438
+    *   Zone 9 (San Salvario): 1535
+    *   Zone 33 (San Paolo): 2804
+
+In conclusion, the provided image offers valuable insights into the demographic changes in Turin's statistical zones between 2012 and 2019. The data highlights areas of population growth and decline, providing a comprehensive understanding of the city's demographic landscape during this period.<|eot_id|>
+
+--------------------------------------------------------------------------------
+
+## Analysis of the number of working-age adults (aged 19–65) living in the census area. for the years 2012 and 2019.
+
+
+The image presents a comparative analysis of the working-age population distribution in Turin, Italy, across various statistical zones. The data is displayed using two maps, one for 2012 and another for 2019, with each zone represented by a distinct color that corresponds to its percentage of working-age population.
+
+**Key Observations:**
+
+*   The majority of zones exhibit an increase in the percentage of working-age population between 2012 and 2019.
+*   Notable exceptions include zones with a decrease in the percentage of working-age population, such as those in the northwestern and northeastern parts of the city.
+*   The highest increases in the percentage of working-age population are observed in the southeastern and southwestern regions of Turin.
+*   The lowest increases are found in the northern and eastern parts of the city.
+
+**Top-Summary:**
+
+*   **Most Common Patterns:** Zones with an increase in the percentage of working-age population between 2012 and 2019.
+*   **Zones with the Highest Increases:**
+    *   Zone 09bis (Valentino): 14.81%
+    *   Zone 80 (Superga): 5.8%
+    *   Zone 76 (Villaretto): 3.72%
+*   **Zones with the Largest Decreases:**
+    *   Zone 78 (Villaggio Snia-Abbadia di Stura): -7.75%
+    *   Zone 67 (Basse di Stura): -8.34%
+    *   Zone 49 (Parco della Pellerina): -13.35%
+
+In conclusion, the data reveals a general trend of increasing working-age population across most statistical zones in Turin between 2012 and 2019. However, there are notable exceptions, particularly in the northern and eastern parts of the city. The highest increases are observed in the southeastern and southwestern regions, while the lowest increases are found in the northern and eastern parts.<|eot_id|>
+
+--------------------------------------------------------------------------------
+
+## Analysis of the average number of line transfers required to reach other census areas in turin. set to -1 if the area has no public transport stops. for the years 2012 and 2019.
+
+
+The provided image displays two maps of the city of Turin, Italy, with the average number of line transfers required to reach other census areas in 2012 and 2019. The maps are color-coded, with darker shades indicating a higher average number of transfers.
+
+**Key Patterns and Trends:**
+
+*   The majority of zones have experienced a decrease in the average number of transfers from 2012 to 2019.
+*   The most common pattern observed across zones is a decrease in the average number of transfers, with most zones showing a decline of at least 1 transfer.
+*   The zones with the highest increases in values from 2012 to 2019 are:
+    *   Zone 43: 12.46
+    *   Zone 26: 7.09
+    *   Zone 50: 3.26
+    *   Zone 41: 2.62
+    *   Zone 17bis: 2.37
+*   The zones with the largest decreases in values from 2012 to 2019 are:
+    *   Zone 88: -0.09
+    *   Zone 2: -0.1
+    *   Zone 49: -0.12
+    *   Zone 80: -0.15
+    *   Zone 09bis: -0.15
+
+**Summary:**
+
+The image shows a clear trend of decreasing average number of transfers required to reach other census areas in Turin from 2012 to 2019. The majority of zones have experienced a decline, with some zones showing significant increases. The zones with the highest increases and largest decreases are highlighted, providing valuable insights into the changes in public transportation connectivity in Turin over the past decade.<|eot_id|>
+
+--------------------------------------------------------------------------------
+
+## Analysis of the number of public transport lines that stop within the census area. for the years 2012 and 2019.
+
+
+The image presents a comparative analysis of the number of lines per statistical zone in the city of Turin, focusing on the years 2012 and 2019. The data is visually represented through two maps, each displaying the number of lines per statistical zone for the respective year.
+
+**Key Observations:**
+
+*   The majority of statistical zones exhibit an increase in the number of lines from 2012 to 2019.
+*   Notably, only a few statistical zones display a decrease in the number of lines over the same period.
+
+**Top-Summary:**
+
+*   **Most Common Patterns:**
+    *   The majority of statistical zones (approximately 80%) show an increase in the number of lines from 2012 to 2019.
+    *   A smaller proportion of statistical zones (around 10-15%) exhibit a decrease in the number of lines over the same period.
+*   **Zones with the Highest Increases:**
+    *   The statistical zones with the highest increases in the number of lines are:
+        *   Zone 78 (Villaggio Snia-Abbadia di Stura): 66 lines in 2012, 114 lines in 2019 (increase of 48 lines)
+        *   Zone 43 (La Fossata): 49 lines in 2012, 89 lines in 2019 (increase of 40 lines)
+        *   Zone 62 (Gerbido): 159 lines in 2012, 193 lines in 2019 (increase of 34 lines)
+*   **Zones with the Largest Decreases:**
+    *   The statistical zones with the largest decreases in the number of lines are:
+        *   Zone 54 (Stadio Olimpico Grande Torino-Piazza d'Armi): 69 lines in 2012, 54 lines in 2019 (decrease of 15 lines)
+        *   Zone 24 (Aurora): 110 lines in 2012, 94 lines in 2019 (decrease of 16 lines)
+        *   Zone 57 (Molinette-Millefonti): 110 lines in 2012, 92 lines in 2019 (decrease of 18 lines)
+
+In conclusion, the majority of statistical zones in Turin experienced an increase in the number of lines from 2012 to 2019, with a smaller proportion showing a decrease. The zones with the highest increases and largest decreases are highlighted, providing valuable insights into the changes in public transportation infrastructure over the specified period.<|eot_id|>
+
+--------------------------------------------------------------------------------
+
+## Analysis of the number of bus and tram stops located within the census area. for the years 2012 and 2019.
+
+
+The provided image displays two maps of the city of Turin, Italy, illustrating the number of stops per statistical zone for the years 2012 and 2019. The maps are color-coded, with darker shades indicating higher numbers of stops.
+
+**Key Patterns and Trends:**
+
+*   The majority of zones exhibit an increase in the number of stops between 2012 and 2019, with a few zones experiencing no change or a decrease.
+*   The most common pattern observed is a moderate increase in the number of stops, with 22 zones showing an increase of 1-5 stops.
+*   A smaller number of zones (6) display a more significant increase of 6-12 stops.
+*   Only 4 zones show a decrease in the number of stops, with the largest decrease being 12 stops in one zone.
+
+**Top-Summary:**
+
+*   **Most Common Patterns:** Moderate increases in the number of stops (22 zones, 1-5 stops) and smaller increases (6 zones, 6-12 stops).
+*   **Zones with Highest Increases:** Le Vallette (12 stops), La Fossata (8 stops), and Vanchiglietta (7 stops).
+*   **Zones with Largest Decreases:** None, as all zones except 4 experienced an increase or no change.
+
+In conclusion, the data suggests that the number of stops per statistical zone in Turin has generally increased between 2012 and 2019, with some zones experiencing more significant growth than others.<|eot_id|>
+
+--------------------------------------------------------------------------------
+
+## Analysis of the number of accidents involving at least one public transport vehicle in the census area. for the years 2012 and 2019.
+
+
+Based on the provided comparison maps and data, here is a comprehensive narrative that analyzes and compares the number of accidents involving at least one public transport vehicle in the census area across the statistical zones of Turin, for the years 2012 and 2019.
+
+**Top-Summary:**
+
+*   **Most Common Patterns Observed Across Zones:** The most common pattern observed across zones is a decrease in the number of accidents involving at least one public transport vehicle from 2012 to 2019. This is evident in the majority of the statistical zones, with many zones showing a significant decrease in values.
+*   **Zones with the Highest Increases in Values from 2012 to 2019:** The zones with the highest increases in values from 2012 to 2019 are:
+    *   Statisticas Zone: 83 (Santa Margherita) with an increase of 50.0%
+    *   Statisticas Zone: 2 (Palazzo Reale) with an increase of 16.67%
+    *   Statisticas Zone: 15 (Piazza Crimea) with an increase of 12.0%
+    *   Statisticas Zone: 13 (Parco Michelotti-Borgo Po) with an increase of 10.53%
+    *   Statisticas Zone: 4 (Piazza San Carlo) with an increase of 9.59%
+*   **Zones with the Largest Decreases in Values from 2012 to 2019:** The zones with the largest decreases in values from 2012 to 2019 are:
+    *   Statisticas Zone: 27 (Ospedale Mauriziano) with a decrease of 11.24%
+    *   Statisticas Zone: 42 (Borgata Vittoria) with a decrease of 10.87%
+    *   Statisticas Zone: 44 (Officine Savigliano) with a decrease of 10.86%
+    *   Statisticas Zone: 30 (La Tesoriera) with a decrease of 9.86%
+    *   Statisticas Zone: 21 (Gasometro) with a decrease of 14.29%
+
+**Key Patterns and Trends:**
+
+*   The majority of the statistical zones show a decrease in the number of accidents involving at least one public transport vehicle from 2012 to 2019.
+*   The zones with the highest increases in values from 2012 to 2019 are located in the northern and eastern parts of the city.
+*   The zones with the largest decreases in values from 2012 to 2019 are located in the central and southern parts of the city.
+*   There is a general trend of decreasing values across the statistical zones, with some zones showing significant decreases.
+
+**Conclusion:**
+
+The provided comparison maps and data suggest that there has been a decrease in the number of accidents involving at least one public transport vehicle in the census area across the statistical zones of Turin, from 2012 to 2019. The zones with the highest increases in values are located in the northern and eastern parts of the city, while the zones with the largest decreases are located in the central and southern parts of the city. Overall, the data suggests that there has been a general trend of decreasing values across the statistical zones.<|eot_id|>
+
+--------------------------------------------------------------------------------
+
+## Analysis of the total number of traffic accidents reported within the census area. for the years 2012 and 2019.
+
+
+Based on the provided comparison maps, the narrative below analyzes and compares the total number of traffic accidents reported within the census area across the statistical zones of Turin, considering both temporal changes (between 2012 and 2019) and within-year variations.
+
+**Most Common Patterns Observed Across Zones**
+
+*   The majority of statistical zones exhibit an increase in the total number of traffic accidents from 2012 to 2019.
+*   A smaller number of zones show a decrease in the total number of traffic accidents from 2012 to 2019.
+*   The largest increases in values are observed in the zones with the highest total number of traffic accidents in 2012.
+
+**Zones with the Highest Increases in Values from 2012 to 2019**
+
+*   The zone with the highest increase in value is "Barriera di Milano" with an increase of 69.0.
+*   The top 5 zones with the highest increases in value are:
+    *   Barriera di Milano: 69.0
+    *   Corso Traiano: 62.0
+    *   Corso Siracusa: 58.0
+    *   Le Vallette: 57.0
+    *   La Tesoriera: 53.0
+
+**Zones with the Largest Decreases in Values from 2012 to 2019**
+
+*   The zone with the largest decrease in value is "Strada di Lanzo" with a decrease of 12.0.
+*   The top 5 zones with the largest decreases in value are:
+    *   Strada di Lanzo: 12.0
+    *   Corso Lepanto: 14.0
+    *   Campidoglio: 16.0
+    *   Piazza San Carlo: 18.0
+    *   Cimitero Parco Torino sud: 2.0
+
+In conclusion, the majority of statistical zones in Turin exhibit an increase in the total number of traffic accidents from 2012 to 2019, with the largest increases observed in the zones with the highest total number of traffic accidents in 2012. A smaller number of zones show a decrease in the total number of traffic accidents from 2012 to 2019, with the largest decreases observed in the zones with the lowest total number of traffic accidents in 2012.<|eot_id|>
+
+--------------------------------------------------------------------------------
+
