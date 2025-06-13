@@ -1,5 +1,5 @@
 {
     "zero_shot_general_verbalization": ["zero_shot_verbalized_urban_data_census.txt", "zero_shot_verbalized_urban_data_zone.txt", "zero_shot_verbalized_urban_data_district.txt"],
     "few_shot_general_verbalization": ["few_shot_verbalized_urban_data_census.txt", "few_shot_verbalized_urban_data_zone.txt", "few_shot_verbalized_urban_data_district.txt"],
-    "perspective_verbalization": ["zero_shot_verbalized_map_urban_data.txt"]
+    "perspective_verbalization": ["zero_shot_verbalized_map_urban_data.txt", "zero_shot_perspective_verbalization_urban_data.txt"]
 }

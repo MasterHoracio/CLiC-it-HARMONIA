@@ -1,13 +1,21 @@
+import re
 import os
+import json
 import torch
+import time
+import argparse
+from tqdm import tqdm
 import numpy as np
 import pandas as pd
 from typing import List, Dict, Tuple, Optional, Union
 from dataclasses import dataclass
 from sentence_transformers import SentenceTransformer
-from transformers import AutoTokenizer, AutoModelForCausalLM
-import re
+from transformers import AutoProcessor, Gemma3ForConditionalGeneration
 from datetime import datetime
+
+#torch.backends.cuda.matmul.allow_tf32 = True
+#torch.backends.cudnn.allow_tf32 = True
+torch.set_float32_matmul_precision('high')
 
 @dataclass
 class AnalysisMetadata:
@@ -25,24 +33,22 @@ class UrbanAnalysisRAG:
         chunk_size: int = 500,
         chunk_overlap: int = 50,
         embedding_model: str = "all-mpnet-base-v2",
-        llm_model: str = "google/gemma-2b-it",
+        llm_model: str = "google/gemma-3-4b-it",#google/gemma-2b-it (12b)
         device: str = "cuda" if torch.cuda.is_available() else "cpu"
     ):
         """
         Initialize the Urban Analysis RAG system.
         """
-        self.device = device
         self.chunk_size = chunk_size
         self.chunk_overlap = chunk_overlap
         
         # Initialize models
+        self.device = torch.device("cuda:1")
         self.embedding_model = SentenceTransformer(embedding_model, device=self.device)
-        self.tokenizer = AutoTokenizer.from_pretrained(llm_model)
-        self.llm = AutoModelForCausalLM.from_pretrained(
-            llm_model,
-            torch_dtype=torch.float16,
-            device_map="auto"
-        )
+        self.llm = Gemma3ForConditionalGeneration.from_pretrained(
+            llm_model, device_map=self.device
+        ).eval()
+        self.processor = AutoProcessor.from_pretrained(llm_model, use_fast=True)
         
         # Storage for processed data
         self.analysis_sections: Dict[str, AnalysisMetadata] = {}
@@ -53,8 +59,9 @@ class UrbanAnalysisRAG:
         """
         Split text into chunks while preserving meaningful boundaries.
         """
-        sections = re.split(r'(?:\n\s*\n|\={3,})', text)
-        return [s.strip() for s in sections if s.strip()]
+        #sections = re.split(r'(?:\n\s*\n|\={3,})', text)
+        #return [s.strip() for s in sections if s.strip()]
+        return [seccion.strip() for seccion in text.split("-" * 80)]
 
     def process_text_data(self, text: str) -> None:
         """
@@ -94,62 +101,104 @@ class UrbanAnalysisRAG:
             return "No relevant information found in the dataset."
         
         context = "\n\n".join(relevant_chunks)
-        prompt = f"""Based on the following urban analysis data:
+        text = f"""Below is the relevant information retrieved from the transportation database:
 
 {context}
 
-Question: {query}
+Now, based on this information, answer the following question: {query}
 
-Please provide a detailed response strictly based on the provided context."""
+Guidelines:
+1. Base your answer strictly on the provided data. Do not include external or speculative information.
+2. If the available data is too limited to fully answer the question, acknowledge this clearly.
+3. Highlight any inconsistencies, contradictions, or data gaps you detect.
+4. If the question is general but only specific district-level information is available, feel free to draw conclusions **based on those districts**, but **explicitly name them** in your response.
+5. When comparing districts, use concrete numbers rather than vague comparisons
+6. Your answer should be concise, analytical, and limited to a single well-structured paragraph.
+7. Focus exclusively on the information relevant to the question; do not associate unrelated data fields in your response.
+
+Response:"""
+
+        messages = [
+            {
+                "role": "system",
+                "content": [{"type": "text", "text": "You are an expert in urban transportation analysis. Your task is to examine and interpret data related to various districts in a city."}]
+            },
+            {
+                "role": "user",
+                "content": [
+                    {"type": "text", "text": text}
+                ]
+            }
+        ]
         
-        input_ids = self.tokenizer(
-            prompt,
-            return_tensors="pt",
-            truncation=True,
-            max_length=2048
-        ).to(self.device)
+        inputs = self.processor.apply_chat_template(
+            messages, add_generation_prompt=True, tokenize=True,
+            return_dict=True, return_tensors="pt"
+        ).to(self.llm.device, dtype=torch.bfloat16)
         
-        outputs = self.llm.generate(
-            **input_ids,
-            temperature=0.7,
-            max_new_tokens=512,
-            do_sample=True
-        )
+        input_len = inputs["input_ids"].shape[-1]
+
+        with torch.inference_mode():
+            generation = self.llm.generate(**inputs, max_new_tokens=512, do_sample=True, top_p=0.9, temperature=0.7, repetition_penalty=1.1)
+            generation = generation[0][input_len:]
         
-        return f"Retrieved Context:\n\n{context}\n\nResponse:\n" + self.tokenizer.decode(outputs[0], skip_special_tokens=True).replace(prompt, "").strip()
+        decoded = self.processor.decode(generation, skip_special_tokens=True)
+        
+        #return f"Retrieved Context:\n\n{context}\n\nResponse:\n" + decoded.strip()
+        return f"Response:\n" + decoded.strip()
+
+def load_full_verbalizations(verbalization_type, dict_verbalizations, path):
+    # Load and process text data
+    text_data = ""
+    for i in range (len(dict_verbalizations[verbalization_type])):
+        with open(path+dict_verbalizations[verbalization_type][i], "r") as f:
+            text = f.read()
+        lines = text.splitlines()
+        text = lines[5:]
+        #text = [s for s in text if not s.startswith("##")]# Remove header
+        text_data += '\n'.join(text)
+    
+    return text_data
 
 # Example usage
-def main():
+def main(args):
+    verbalization_type       = args.verbalization
+    path_queries             = args.path_queries
+    path_output              = "output_results/"
+    verbalization_files      = "verbalizations.json"
+    verbalization_path       = "../multimodal_verbalization/transport-experiment/verbalization_results/"
+    out_file_name            = verbalization_type + "_output_responses.txt"
+    output_path              = os.path.join(path_output, out_file_name)
+    
     # Initialize the RAG system
     rag = UrbanAnalysisRAG()
-    
-    # Load and process text data
-    with open("verbalized-data.txt", "r") as f:
-        text_data = f.read()
+
+    # Load queries
+    with open(path_queries, 'r') as f:
+        queries = json.load(f)
+
+    # Load verbalization file names
+    with open(verbalization_files, 'r') as f:
+        dict_verbalizations = json.load(f)
+
+    text_data = load_full_verbalizations(verbalization_type, dict_verbalizations, verbalization_path)
     
     rag.process_text_data(text_data)
-    
-    # Example queries
-    queries = [
-        "How the length of lines per capita relates to the number of lines in the area?",
-        "Analyze the temporal changes in Turin district, particularly focusing on how immigrant percentage has changed?",
-        "How the number of stops per capita and number of lines stopping reflect the population size in Turin district?", 
-        #"Whether district's transport coverage appears appropriate for its demographic compositions?",
-        "How does public transport accessibility differ between areas with varying age distributions?",
-        "Which districts have the lowest number of stops per capita, and how does this impact accessibility?",
-        "Are there areas where public transport coverage is disproportionately low compared to demand?",
-        
-        #"How does the coverage of stoppings and number of lines stopping reflect the number of people in a census?",
-        #"Does a higher number of minors and seniors in a census reflect a higher number of stops and lines stopping?",
-        #"Does the length of the lines stopping per population increase when the number of lines is higher?"
-    ]
-    
-    # Generate responses
-    for query in queries:
-        print(f"\nQuery: {query}")
-        print("-" * 80)
-        response = rag.generate_response(query)
-        print(f"Response: {response}\n")
+    with open(output_path, 'w', encoding='utf-8') as outfile:
+        outfile.write(f"# Output responses using: {verbalization_type}\n")
+        outfile.write(f"# Generated on: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
+        outfile.write(f"# Source file: {path_queries}\n")
+        outfile.write(f"# Total records: {len(queries)}\n\n")
+        # Generate responses
+        for key, value in tqdm(queries.items(), desc="Processing queries"):
+            outfile.write(f"\nQuery {key}: {value}\n")
+            outfile.write("-" * 100)
+            response = rag.generate_response(value)
+            outfile.write(f"\nResponse: {response}\n")
 
 if __name__ == "__main__":
-    main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--verbalization", type=str, required=True)
+    parser.add_argument("--path_queries", type=str, required=True)
+    args = parser.parse_args()
+    main(args)
