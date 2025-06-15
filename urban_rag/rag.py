@@ -145,7 +145,7 @@ Response:"""
         decoded = self.processor.decode(generation, skip_special_tokens=True)
         
         #return f"Retrieved Context:\n\n{context}\n\nResponse:\n" + decoded.strip()
-        return f"Response:\n" + decoded.strip()
+        return decoded.strip(), relevant_chunks
 
 def load_full_verbalizations(verbalization_type, dict_verbalizations, path):
     # Load and process text data
@@ -167,8 +167,9 @@ def main(args):
     path_output              = "output_results/"
     verbalization_files      = "verbalizations.json"
     verbalization_path       = "../multimodal_verbalization/transport-experiment/verbalization_results/"
-    out_file_name            = verbalization_type + "_output_responses.txt"
-    output_path              = os.path.join(path_output, out_file_name)
+    out_file_name_txt        = verbalization_type + "_output_responses.txt"
+    output_path_txt          = os.path.join(path_output, out_file_name_txt)
+    output_path_json         = os.path.join(path_output, verbalization_type + "_output_responses.json")
     
     # Initialize the RAG system
     rag = UrbanAnalysisRAG()
@@ -184,7 +185,8 @@ def main(args):
     text_data = load_full_verbalizations(verbalization_type, dict_verbalizations, verbalization_path)
     
     rag.process_text_data(text_data)
-    with open(output_path, 'w', encoding='utf-8') as outfile:
+    output_data = {}
+    with open(output_path_txt, 'w', encoding='utf-8') as outfile:
         outfile.write(f"# Output responses using: {verbalization_type}\n")
         outfile.write(f"# Generated on: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
         outfile.write(f"# Source file: {path_queries}\n")
@@ -193,8 +195,14 @@ def main(args):
         for key, value in tqdm(queries.items(), desc="Processing queries"):
             outfile.write(f"\nQuery {key}: {value}\n")
             outfile.write("-" * 100)
-            response = rag.generate_response(value)
+            response, context = rag.generate_response(value)
+            output_data[key] = {"query": value,
+                               "context": context,
+                               "answer": response}
             outfile.write(f"\nResponse: {response}\n")
+    
+    with open(output_path_json, "w", encoding="utf-8") as file:
+        json.dump(output_data, file, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()

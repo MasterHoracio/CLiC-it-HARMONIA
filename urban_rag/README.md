@@ -48,3 +48,30 @@ python3 rag.py --verbalization few_shot_general_verbalization --path_queries que
 # Using perspective verbalization
 python3 rag.py --verbalization perspective_verbalization --path_queries queries.json
 ```
+
+## Evaluación del sistema RAG
+
+This repository provides instructions for evaluating the RAG (Retrieval-Augmented Generation) system using the `evaluate.py` script.
+
+### How to Run the Evaluation
+
+To run the evaluation, execute the `evaluate.py` script with the following two required arguments:
+
+- `--answers_file`: the path to the JSON file containing the RAG system's answers.
+- `--output_file`: the name of the file where the evaluation results will be saved.
+
+The evaluation measures the following metrics:
+- **Faithfulness**: the degree to which the answer is supported by the retrieved context.
+- **Answer Relevance**: how well the answer addresses the question.
+- **Context Relevance**: how relevant the retrieved context is to the question.
+
+### Example Commands
+
+Here are some example configurations for executing the evaluation:
+
+```bash
+python3 evaluate.py --answers_file zero_shot_general_verbalization_output_responses.json --output_file evaluation_results_zero_shot_general_verbalization.json
+
+python3 evaluate.py --answers_file few_shot_general_verbalization_output_responses.json --output_file evaluation_results_few_shot_general_verbalization.json
+
+python3 evaluate.py --answers_file perspective_verbalization_output_responses.json --output_file evaluation_results_perspective_verbalization.json
