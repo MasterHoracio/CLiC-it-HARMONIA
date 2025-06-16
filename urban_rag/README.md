@@ -49,7 +49,7 @@ python3 rag.py --verbalization few_shot_general_verbalization --path_queries que
 python3 rag.py --verbalization perspective_verbalization --path_queries queries.json
 ```
 
-## Evaluación del sistema RAG
+## RAG System Evaluation
 
 This repository provides instructions for evaluating the RAG (Retrieval-Augmented Generation) system using the `evaluate.py` script.
 
