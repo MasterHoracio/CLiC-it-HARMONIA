@@ -1,0 +1,102 @@
+{
+    "1": {
+        "query": "From 2012 to 2019 the population in Turin has decreased. Considering all the census, does this decrease affect all the demographics? Which category is more affected and which one is less affected?",
+        "answer": "From 2012 to 2019, Turin experienced a population decrease that affected different demographic groups unequally. I cannot provide specific details about which categories were most and least affected without access to detailed census data broken down by age, origin, and other relevant demographic factors for each year.\n"
+    },
+    "2": {
+        "query": "Is there any correlation between the number of foreigners and the number of families? Can you spot whether a high number of foreigners in a census means a high number of components in families?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "3": {
+        "query": "Does a high number of females in a census mean a high number of minors in that census?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "4": {
+        "query": "Does a high number of foreigners in a census mean a high number of minors in that census?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "5": {
+        "query": "Which district is the most populated? Consider all the census belonging to the districts.",
+        "answer": "Circoscrizione 7 (Aurora, Vanchiglia, Sassi, Madonna del Pilone).\n"
+    },
+    "6": {
+        "query": "Which district has the highest number of family components?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "7": {
+        "query": "Does a high number of working-age adults mean a low number of family components?",
+        "answer": "Not necessarily. A high number of working-age adults can correlate with both high and low numbers of family components depending on other factors like birth rates, migration patterns, and living arrangements within Turin. More data is needed to draw a conclusion.\n"
+    },
+    "8": {
+        "query": "Which one is the district with the highest number of minors?",
+        "answer": "Circoscrizione 6.\n"
+    },
+    "9": {
+        "query": "Which districts experienced the largest changes (either increase or decrease) in the percentage of foreigners between 2012 and 2019?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "10": {
+        "query": "Which districts experienced the largest changes (either increase or decrease) in the percentage of minors between 2012 and 2019?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "11": {
+        "query": "Which district has the highest total number of accidents?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "12": {
+        "query": "Which district has the lowest number of public accidents?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "13": {
+        "query": "Does a high total population in a district imply a high number of total accidents?",
+        "answer": "Generally, yes, a higher population in a district is likely to correlate with a higher number of total accidents, simply due to increased traffic volume and pedestrian activity. However, this correlation can be significantly affected by factors like road infrastructure, speed limits, and the prevalence of public transport.\n"
+    },
+    "14": {
+        "query": "Does a high number of family components in a district imply a high number of public accidents?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "15": {
+        "query": "From 2012 to 2019, has the number of public accidents decreased in most districts?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "16": {
+        "query": "Which districts experienced the largest changes (either increase or decrease) in the number of public accidents between 2012 and 2019?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "17": {
+        "query": "Which district has the highest number of bus/tram stops in the census?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "18": {
+        "query": "Which district has the lowest number of lines stopping in the census?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "19": {
+        "query": "Does a high number of children in the census imply greater stop coverage?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "20": {
+        "query": "Does a high total population in the census imply a higher number of bus/tram stops?",
+        "answer": "Not necessarily. While a higher population can correlate with more bus/tram stops, other factors like population density, land use (residential vs. industrial), income levels, car ownership rates, and the presence of alternative transportation options (metro, bike lanes) significantly influence the number of bus/tram stops. A densely populated area might require more stops than a sparsely populated area with the same total population.\n"
+    },
+    "21": {
+        "query": "Does a high number of seniors in the census imply greater connectivity between districts?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "22": {
+        "query": "From 2012 to 2019, can you spot whether the number of bus/tram stops has increased in the census?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "23": {
+        "query": "From 2012 to 2019, can you spot whether connectivity between districts has improved?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "24": {
+        "query": "Which districts experienced the largest changes (either increase or decrease) in the number of lines stopping in the census between 2012 and 2019?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    },
+    "25": {
+        "query": "Which districts experienced the largest changes (either increase or decrease) in inter-district connectivity between 2012 and 2019?",
+        "answer": "I cannot answer the question due to lack of necessary data.\n"
+    }
+}

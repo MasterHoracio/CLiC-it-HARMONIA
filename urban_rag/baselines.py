@@ -60,6 +60,7 @@ def main(args):
     path_output          = "output_results/"
     out_file_name        = llm + "_output_responses.txt"
     output_path          = os.path.join(path_output, out_file_name)
+    output_path_json     = os.path.join(path_output, llm + "_output_responses.json")
     
     # Load queries
     with open(path_queries, 'r') as f:
@@ -72,6 +73,7 @@ def main(args):
         model_id = "models/gemini-2.0-flash"
         model = genai.GenerativeModel(model_name=model_id)
     
+    output_data = {}
     with open(output_path, 'w', encoding='utf-8') as outfile:
         outfile.write(f"# Output responses using: {model_id}\n")
         outfile.write(f"# Generated on: {time.strftime('%Y-%m-%d %H:%M:%S')}\n")
@@ -84,7 +86,12 @@ def main(args):
             prompt = build_prompt(llm, value)
             response = get_response(llm, prompt, model)
             outfile.write(f"\nResponse: {response}\n")
+            output_data[key] = {"query": value,
+                               "answer": response}
             time.sleep(5)
+    
+    with open(output_path_json, "w", encoding="utf-8") as file:
+        json.dump(output_data, file, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
