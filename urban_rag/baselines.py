@@ -12,9 +12,9 @@ from typing import List, Dict, Tuple, Optional, Union
 from datetime import datetime
 
 import google.generativeai as genai
-genai.configure(api_key="AIzaSyBA60prQ_BSjhxJtkTB53whdhzs97qI0wc")
+genai.configure(api_key="ADD_API_KEY")
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="ADD_API_KEY")
 
 def build_prompt(llm: str, query: str):
     if llm == "gemini":
