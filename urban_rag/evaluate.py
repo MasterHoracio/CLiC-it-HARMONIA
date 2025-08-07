@@ -14,7 +14,7 @@ from sentence_transformers import SentenceTransformer
 from typing import List, Dict, Tuple, Optional, Union
 from datetime import datetime
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="ADD_API_KEY")
 device = torch.device("cuda:1")
 
 def build_prompt(type_prompt: str, data: dict, sentences: list = None):
